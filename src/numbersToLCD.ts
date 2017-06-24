@@ -6,17 +6,13 @@ export class NumbersToLCD {
                 middle: " _|\n",
                 bottom: "|_ "
             }
-        if (input === 2) {
-            return two.top + two.middle + two.bottom;
-        }
-        if (input === 3) {
-            return " _ \n _|\n _|";
-        }
-        if (input === 4) {
-            return "   \n|_|\n  |";
-        }
-        else {
-            return "   \n  |\n  |";
-        }
+        let array: any = [
+            [0, " _ \n| |\n|_|"],
+            [1, "   \n  |\n  |" ],
+            [2, " _ \n _|\n|_ "],
+            [3, " _ \n _|\n _|"],
+            [4, "   \n|_|\n  |"]
+        ]
+        return array[input][1];
     }
 }
