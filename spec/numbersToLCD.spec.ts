@@ -4,6 +4,9 @@ describe ("Numbers To LCD", () => {
         console.log(expected);
         expect(NumbersToLCD.translate(input)).toBe(expected);
     }
+    it("Should translate 0 to lcd 0", () => {
+        NumbersToLCDTranslationTest(0, " _ \n| |\n|_|" );
+    });
     it("Should translate 1 to lcd 1", () => {
         NumbersToLCDTranslationTest(1, "   \n  |\n  |" );
     });
@@ -15,5 +18,8 @@ describe ("Numbers To LCD", () => {
     });
     it("Should translate 4 to lcd 4", () => {
         NumbersToLCDTranslationTest(4, "   \n|_|\n  |");
+    });
+    it("Should translate 5 to lcd 5", () => {
+        NumbersToLCDTranslationTest(5, " _ \n|_ \n _|");
     });
 });
