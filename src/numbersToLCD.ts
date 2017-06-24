@@ -7,6 +7,9 @@ export class NumbersToLCD {
         if (input === 3) {
             return " _ \n _|\n _|";
         }
+        if (input === 4) {
+            return "   \n|_|\n  |";
+        }
         else {
             return "   \n  |\n  |";
         }
