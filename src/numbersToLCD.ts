@@ -1,8 +1,13 @@
 export class NumbersToLCD {
     static translate(input: number): string {
         let output: string;
+        let two: any = {
+                top: " _ \n",
+                middle: " _|\n",
+                bottom: "|_ "
+            }
         if (input === 2) {
-            return " _ \n _|\n|_ ";
+            return two.top + two.middle + two.bottom;
         }
         if (input === 3) {
             return " _ \n _|\n _|";
