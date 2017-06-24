@@ -2,12 +2,13 @@ export class NumbersToLCD {
     static translate(input: number): string {
         let output: string;
         if (input === 2) {
-            output = " _ \n _|\n|_ ";
+            return " _ \n _|\n|_ ";
+        }
+        if (input === 3) {
+            return " _ \n _|\n _|";
         }
         else {
-            output = "   \n  |\n  |";
+            return "   \n  |\n  |";
         }
-        console.log(output);
-        return output;
     }
 }
