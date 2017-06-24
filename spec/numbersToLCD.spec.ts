@@ -22,4 +22,13 @@ describe ("Numbers To LCD", () => {
     it("Should translate 5 to lcd 5", () => {
         NumbersToLCDTranslationTest(5, " _ \n|_ \n _|");
     });
+    it("Should translate 6 to lcd 6", () => {
+        NumbersToLCDTranslationTest(6, " _ \n|_ \n|_|");
+    });
+    it("Should translate 7 to lcd 7", () => {
+        NumbersToLCDTranslationTest(7, " _ \n  |\n  |");
+    });
+    it("Should translate 8 to lcd 8", () => {
+        NumbersToLCDTranslationTest(8, " _ \n|_|\n|_|");
+    });
 });
