@@ -17,6 +17,12 @@ export class NumbersToLCD {
             bottom += "|_ ";
             return top + "\n" + middle + "\n" + bottom;
         }
+        if (input === 3) {
+            top += " _ ";
+            middle += " _|";
+            bottom += " _|";
+            return top + "\n" + middle + "\n" + bottom;
+        }
         else {
             return " _ \n| |\n|_|";
         }
