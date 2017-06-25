@@ -49,9 +49,11 @@ export class NumbersToLCD {
         let middle: string = "";
         let bottom: string = "";
 
-        top = conversionTable[input][0];
-        middle = conversionTable[input][1];
-        bottom = conversionTable[input][2];
+        for (let digit of input.toString()) {
+            top += conversionTable[digit][0];
+            middle += conversionTable[digit][1];
+            bottom += conversionTable[digit][2];
+        }
 
         return top + "\n" + middle + "\n" + bottom;
     }

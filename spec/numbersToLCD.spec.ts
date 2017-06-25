@@ -34,4 +34,7 @@ describe ("Numbers To LCD", () => {
  it("Should convert number 9 to LCD display of 9", () => {
      NumbersToLCDTest(9, " _ \n|_|\n _|");
  });
+ it("Should convert number 10 to LCD display of 10", () => {
+     NumbersToLCDTest(10, "    _ \n  || |\n  ||_|");
+ });
 });
