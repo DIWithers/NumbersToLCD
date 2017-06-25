@@ -11,6 +11,19 @@ export class NumbersToLCD {
             " _ \n  |\n  |",
             " _ \n|_|\n|_|"
         ]
-        return translationArray[inputAsIndex];
+        let translationTable: any = {
+            0: [" _ ",
+                "| |",
+                "|_|"],
+        }
+        let top: string = "";
+        let middle: string = "";
+        let bottom: string = "";
+
+        //map alternative?
+        top += translationTable[0][0];
+        middle += translationTable[0][1];
+        bottom += translationTable[0][2];
+        return top + "\n" + middle + "\n" + bottom;
     }
 }
