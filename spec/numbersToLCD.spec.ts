@@ -19,4 +19,16 @@ describe ("Numbers To LCD", () => {
  it("Should convert number 4 to LCD display of 4", () => {
      NumbersToLCDTest(4, "   \n|_|\n  |");
  });
+ it("Should convert number 5 to LCD display of 5", () => {
+     NumbersToLCDTest(5, " _ \n|_ \n _|");
+ });
+ it("Should convert number 6 to LCD display of 6", () => {
+     NumbersToLCDTest(6, " _ \n|_ \n|_|");
+ });
+ it("Should convert number 7 to LCD display of 7", () => {
+     NumbersToLCDTest(7, " _ \n  |\n  |");
+ });
+ it("Should convert number 8 to LCD display of 8", () => {
+     NumbersToLCDTest(8, " _ \n|_|\n|_|");
+ });
 });
