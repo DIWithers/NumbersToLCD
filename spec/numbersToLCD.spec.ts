@@ -16,4 +16,7 @@ describe ("Numbers To LCD", () => {
  it("Should convert number 3 to LCD display of 3", () => {
      NumbersToLCDTest(3, " _ \n _|\n _|");
  });
+ it("Should convert number 4 to LCD display of 4", () => {
+     NumbersToLCDTest(4, "   \n|_|\n  |");
+ });
 });

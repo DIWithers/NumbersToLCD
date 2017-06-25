@@ -1,30 +1,38 @@
 export class NumbersToLCD {
 
     static translate(input: number): string {
+
+        let conversionTable: any = {
+            0: [" _ ",
+                "| |",
+                "|_|"
+            ],
+            1: ["   ",
+                "  |",
+                "  |"
+            ],
+            2: [" _ ",
+                " _|",
+                "|_ "
+            ],
+            3: [" _ ",
+                " _|",
+                " _|"
+            ],
+            4: ["   ",
+                "|_|",
+                "  |"
+            ]
+        }
+
         let top: string = "";
         let middle: string = "";
         let bottom: string = "";
 
-        if (input === 1) {
-            top += "   ";
-            middle += "  |";
-            bottom += "  |";
-            return top + "\n" + middle + "\n" + bottom;
-        }
-        if (input === 2) {
-            top += " _ ";
-            middle += " _|";
-            bottom += "|_ ";
-            return top + "\n" + middle + "\n" + bottom;
-        }
-        if (input === 3) {
-            top += " _ ";
-            middle += " _|";
-            bottom += " _|";
-            return top + "\n" + middle + "\n" + bottom;
-        }
-        else {
-            return " _ \n| |\n|_|";
-        }
+        top = conversionTable[input][0];
+        middle = conversionTable[input][1];
+        bottom = conversionTable[input][2];
+
+        return top + "\n" + middle + "\n" + bottom;
     }
 }
